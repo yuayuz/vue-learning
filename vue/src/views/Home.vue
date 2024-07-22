@@ -5,6 +5,7 @@
   <button @click="classAndStyleBindings">Class and Style Bindings</button>
   <button @click="conditionalRendering">Conditional Rendering</button>
   <button @click="listRendering">List Rendering</button>
+  <button @click="eventHandling">Event Handling</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'
@@ -31,6 +32,10 @@ let conditionalRendering = function () {
 
 let listRendering = function () {
   router.push({ name: 'ListRendering' })
+}
+
+let eventHandling = function () {
+  router.push({ name: 'EventHandling' })
 }
 </script>
 <style scoped></style>

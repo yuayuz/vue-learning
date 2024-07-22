@@ -6,6 +6,7 @@ import ComputedProperties from '@/views/ComputedProperties.vue'
 import ClassAndStyleBindings from '@/views/ClassAndStyleBindings.vue'
 import ConditionalRendering from '@/views/ConditionalRendering.vue'
 import ListRendering from '@/views/ListRendering.vue'
+import EventHandling from '@/views/EventHandling.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -44,6 +45,11 @@ const router = createRouter({
       path: '/ListRendering',
       name: 'ListRendering',
       component: ListRendering
+    },
+    {
+      path: '/EventHandling',
+      name: 'EventHandling',
+      component: EventHandling
     }
   ]
 })
