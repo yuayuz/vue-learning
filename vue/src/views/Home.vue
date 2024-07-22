@@ -4,6 +4,7 @@
   <button @click="computedProperties">Computed Properties</button>
   <button @click="classAndStyleBindings">Class and Style Bindings</button>
   <button @click="conditionalRendering">Conditional Rendering</button>
+  <button @click="listRendering">List Rendering</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'
@@ -26,6 +27,10 @@ let classAndStyleBindings = function () {
 
 let conditionalRendering = function () {
   router.push({ name: 'ConditionalRendering' })
+}
+
+let listRendering = function () {
+  router.push({ name: 'ListRendering' })
 }
 </script>
 <style scoped></style>

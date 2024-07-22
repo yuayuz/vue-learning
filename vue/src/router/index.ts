@@ -5,6 +5,7 @@ import ReactivityFundamentals from '@/views/ReactivityFundamentals.vue'
 import ComputedProperties from '@/views/ComputedProperties.vue'
 import ClassAndStyleBindings from '@/views/ClassAndStyleBindings.vue'
 import ConditionalRendering from '@/views/ConditionalRendering.vue'
+import ListRendering from '@/views/ListRendering.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,11 @@ const router = createRouter({
       path: '/ConditionalRendering',
       name: 'ConditionalRendering',
       component: ConditionalRendering
+    },
+    {
+      path: '/ListRendering',
+      name: 'ListRendering',
+      component: ListRendering
     }
   ]
 })
