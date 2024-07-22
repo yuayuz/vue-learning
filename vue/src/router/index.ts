@@ -7,6 +7,7 @@ import ClassAndStyleBindings from '@/views/ClassAndStyleBindings.vue'
 import ConditionalRendering from '@/views/ConditionalRendering.vue'
 import ListRendering from '@/views/ListRendering.vue'
 import EventHandling from '@/views/EventHandling.vue'
+import FormInputBindings from '@/views/FormInputBindings.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ const router = createRouter({
       path: '/EventHandling',
       name: 'EventHandling',
       component: EventHandling
+    },
+    {
+      path: '/FormInputBindings',
+      name: 'FormInputBindings',
+      component: FormInputBindings
     }
   ]
 })

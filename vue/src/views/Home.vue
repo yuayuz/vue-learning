@@ -6,6 +6,7 @@
   <button @click="conditionalRendering">Conditional Rendering</button>
   <button @click="listRendering">List Rendering</button>
   <button @click="eventHandling">Event Handling</button>
+  <button @click="formInputBindings">Form Input Bindings</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'
@@ -36,6 +37,10 @@ let listRendering = function () {
 
 let eventHandling = function () {
   router.push({ name: 'EventHandling' })
+}
+
+let formInputBindings = function () {
+  router.push({ name: 'FormInputBindings' })
 }
 </script>
 <style scoped></style>
