@@ -26,6 +26,4 @@ app.config.errorHandler = (err) => {
 //app.component('TodoDeleteButton', TodoDeleteButton)
 
 /* createApp API允许在同一个页面中创建多个共存的Vue应用，
-* 每个应用都有自己用于配置和全局资源的作用域*/
-
-
+ * 每个应用都有自己用于配置和全局资源的作用域*/
