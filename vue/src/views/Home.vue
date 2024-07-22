@@ -2,6 +2,7 @@
   <button @click="templateSyntax">Template Syntax</button>
   <button @click="reactivityFundamentals">Reactivity Fundamentals</button>
   <button @click="computedProperties">Computed Properties</button>
+  <button @click="classAndStyleBindings">Class and Style Bindings</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'
@@ -16,6 +17,10 @@ let reactivityFundamentals = function () {
 
 let computedProperties = function () {
   router.push({ name: 'ComputedProperties' })
+}
+
+let classAndStyleBindings = function () {
+  router.push({ name: 'ClassAndStyleBindings' })
 }
 </script>
 <style scoped></style>
