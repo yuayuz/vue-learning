@@ -4,6 +4,7 @@ import TemplateSyntax from '@/views/TemplateSyntax.vue'
 import ReactivityFundamentals from '@/views/ReactivityFundamentals.vue'
 import ComputedProperties from '@/views/ComputedProperties.vue'
 import ClassAndStyleBindings from '@/views/ClassAndStyleBindings.vue'
+import ConditionalRendering from '@/views/ConditionalRendering.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/ClassAndStyleBindings',
       name: 'ClassAndStyleBindings',
       component: ClassAndStyleBindings
+    },
+    {
+      path: '/ConditionalRendering',
+      name: 'ConditionalRendering',
+      component: ConditionalRendering
     }
   ]
 })

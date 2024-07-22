@@ -3,6 +3,7 @@
   <button @click="reactivityFundamentals">Reactivity Fundamentals</button>
   <button @click="computedProperties">Computed Properties</button>
   <button @click="classAndStyleBindings">Class and Style Bindings</button>
+  <button @click="conditionalRendering">Conditional Rendering</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'
@@ -21,6 +22,10 @@ let computedProperties = function () {
 
 let classAndStyleBindings = function () {
   router.push({ name: 'ClassAndStyleBindings' })
+}
+
+let conditionalRendering = function () {
+  router.push({ name: 'ConditionalRendering' })
 }
 </script>
 <style scoped></style>
