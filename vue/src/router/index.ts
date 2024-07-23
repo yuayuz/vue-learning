@@ -12,6 +12,7 @@ import LifecycleHooks from '@/views/vueBasics/LifecycleHooks.vue'
 import Watchers from '@/views/vueBasics/Watchers.vue'
 import TemplateRefs from '@/views/vueBasics/TemplateRefs.vue'
 import ComponentsBasics from '@/views/vueBasics/ComponentsBasics.vue'
+import ComponentRegistration from '@/views/ComponentsIn-Depth/ComponentRegistration.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -80,6 +81,11 @@ const router = createRouter({
       path: '/ComponentsBasics',
       name: 'ComponentsBasics',
       component: ComponentsBasics
+    },
+    {
+      path: '/ComponentRegistration',
+      name: 'ComponentRegistration',
+      component: ComponentRegistration
     }
   ]
 })

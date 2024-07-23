@@ -11,6 +11,7 @@
   <button @click="handleRouter('Watchers')">Watchers</button>
   <button @click="handleRouter('TemplateRefs')">Template Refs</button>
   <button @click="handleRouter('ComponentsBasics')">Components Basics</button>
+  <button @click="handleRouter('ComponentRegistration')">Component registration</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'
