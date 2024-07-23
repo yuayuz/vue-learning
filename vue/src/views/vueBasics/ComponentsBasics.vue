@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import Props from '@/views/Props.vue'
+import Props from '@/views/vueBasics/Props.vue'
 import { ref } from 'vue'
 
 let name = ref('')
