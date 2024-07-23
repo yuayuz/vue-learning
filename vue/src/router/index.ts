@@ -9,6 +9,7 @@ import ListRendering from '@/views/ListRendering.vue'
 import EventHandling from '@/views/EventHandling.vue'
 import FormInputBindings from '@/views/FormInputBindings.vue'
 import LifecycleHooks from '@/views/LifecycleHooks.vue'
+import Watchers from '@/views/Watchers.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -62,6 +63,11 @@ const router = createRouter({
       path: '/LifecycleHooks',
       name: 'LifecycleHooks',
       component: LifecycleHooks
+    },
+    {
+      path: '/Watchers',
+      name: 'Watchers',
+      component: Watchers
     }
   ]
 })
