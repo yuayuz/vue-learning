@@ -8,6 +8,7 @@ import ConditionalRendering from '@/views/ConditionalRendering.vue'
 import ListRendering from '@/views/ListRendering.vue'
 import EventHandling from '@/views/EventHandling.vue'
 import FormInputBindings from '@/views/FormInputBindings.vue'
+import LifecycleHooks from '@/views/LifecycleHooks.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,6 +57,11 @@ const router = createRouter({
       path: '/FormInputBindings',
       name: 'FormInputBindings',
       component: FormInputBindings
+    },
+    {
+      path: '/LifecycleHooks',
+      name: 'LifecycleHooks',
+      component: LifecycleHooks
     }
   ]
 })

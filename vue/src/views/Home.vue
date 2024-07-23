@@ -7,6 +7,7 @@
   <button @click="listRendering">List Rendering</button>
   <button @click="eventHandling">Event Handling</button>
   <button @click="formInputBindings">Form Input Bindings</button>
+  <button @click="lifecycleHooks">Lifecycle Hooks</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'
@@ -41,6 +42,9 @@ let eventHandling = function () {
 
 let formInputBindings = function () {
   router.push({ name: 'FormInputBindings' })
+}
+let lifecycleHooks = function () {
+  router.push({ name: 'LifecycleHooks' })
 }
 </script>
 <style scoped></style>
