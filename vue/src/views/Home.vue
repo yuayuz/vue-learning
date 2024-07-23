@@ -1,63 +1,22 @@
 <template>
-  <button @click="templateSyntax">Template Syntax</button>
-  <button @click="reactivityFundamentals">Reactivity Fundamentals</button>
-  <button @click="computedProperties">Computed Properties</button>
-  <button @click="classAndStyleBindings">Class and Style Bindings</button>
-  <button @click="conditionalRendering">Conditional Rendering</button>
-  <button @click="listRendering">List Rendering</button>
-  <button @click="eventHandling">Event Handling</button>
-  <button @click="formInputBindings">Form Input Bindings</button>
-  <button @click="lifecycleHooks">Lifecycle Hooks</button>
-  <button @click="watchers">Watchers</button>
-  <button @click="templateRefs">Template Refs</button>
-  <button @click="componentsBasics">Components Basics</button>
+  <button @click="handleRouter('TemplateSyntax')">Template Syntax</button>
+  <button @click="handleRouter('ReactivityFundamentals')">Reactivity Fundamentals</button>
+  <button @click="handleRouter('ComputedProperties')">Computed Properties</button>
+  <button @click="handleRouter('ClassAndStyleBindings')">Class and Style Bindings</button>
+  <button @click="handleRouter('ConditionalRendering')">Conditional Rendering</button>
+  <button @click="handleRouter('ListRendering')">List Rendering</button>
+  <button @click="handleRouter('EventHandling')">Event Handling</button>
+  <button @click="handleRouter('FormInputBindings')">Form Input Bindings</button>
+  <button @click="handleRouter('LifecycleHooks')">Lifecycle Hooks</button>
+  <button @click="handleRouter('Watchers')">Watchers</button>
+  <button @click="handleRouter('TemplateRefs')">Template Refs</button>
+  <button @click="handleRouter('ComponentsBasics')">Components Basics</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'
-import ComponentsBasics from '@/views/Props.vue'
 
-let templateSyntax = function () {
-  router.push({ name: 'TemplateSyntax' })
-}
-
-let reactivityFundamentals = function () {
-  router.push({ name: 'ReactivityFundamentals' })
-}
-
-let computedProperties = function () {
-  router.push({ name: 'ComputedProperties' })
-}
-
-let classAndStyleBindings = function () {
-  router.push({ name: 'ClassAndStyleBindings' })
-}
-
-let conditionalRendering = function () {
-  router.push({ name: 'ConditionalRendering' })
-}
-
-let listRendering = function () {
-  router.push({ name: 'ListRendering' })
-}
-
-let eventHandling = function () {
-  router.push({ name: 'EventHandling' })
-}
-
-let formInputBindings = function () {
-  router.push({ name: 'FormInputBindings' })
-}
-let lifecycleHooks = function () {
-  router.push({ name: 'LifecycleHooks' })
-}
-let watchers = function () {
-  router.push({ name: 'Watchers' })
-}
-let templateRefs = function () {
-  router.push({ name: 'TemplateRefs' })
-}
-let componentsBasics = function () {
-  router.push({ name: 'ComponentsBasics' })
+const handleRouter = function (page: string) {
+  router.push({ name: page })
 }
 </script>
 <style scoped></style>
