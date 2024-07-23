@@ -13,6 +13,7 @@ import Watchers from '@/views/vueBasics/Watchers.vue'
 import TemplateRefs from '@/views/vueBasics/TemplateRefs.vue'
 import ComponentsBasics from '@/views/vueBasics/ComponentsBasics.vue'
 import ComponentRegistration from '@/views/ComponentsIn-Depth/ComponentRegistration.vue'
+import Props from '@/views/ComponentsIn-Depth/Props.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -86,6 +87,11 @@ const router = createRouter({
       path: '/ComponentRegistration',
       name: 'ComponentRegistration',
       component: ComponentRegistration
+    },
+    {
+      path: '/Props',
+      name: 'Props',
+      component: Props
     }
   ]
 })
