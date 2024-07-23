@@ -9,6 +9,7 @@
   <button @click="formInputBindings">Form Input Bindings</button>
   <button @click="lifecycleHooks">Lifecycle Hooks</button>
   <button @click="watchers">Watchers</button>
+  <button @click="templateRefs">Template Refs</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'
@@ -49,6 +50,9 @@ let lifecycleHooks = function () {
 }
 let watchers = function () {
   router.push({ name: 'Watchers' })
+}
+let templateRefs = function () {
+  router.push({ name: 'TemplateRefs' })
 }
 </script>
 <style scoped></style>

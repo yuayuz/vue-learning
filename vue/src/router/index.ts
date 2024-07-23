@@ -10,6 +10,7 @@ import EventHandling from '@/views/EventHandling.vue'
 import FormInputBindings from '@/views/FormInputBindings.vue'
 import LifecycleHooks from '@/views/LifecycleHooks.vue'
 import Watchers from '@/views/Watchers.vue'
+import TemplateRefs from '@/views/TemplateRefs.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -68,6 +69,11 @@ const router = createRouter({
       path: '/Watchers',
       name: 'Watchers',
       component: Watchers
+    },
+    {
+      path: '/TemplateRefs',
+      name: 'TemplateRefs',
+      component: TemplateRefs
     }
   ]
 })
