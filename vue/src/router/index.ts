@@ -11,6 +11,7 @@ import FormInputBindings from '@/views/FormInputBindings.vue'
 import LifecycleHooks from '@/views/LifecycleHooks.vue'
 import Watchers from '@/views/Watchers.vue'
 import TemplateRefs from '@/views/TemplateRefs.vue'
+import ComponentsBasics from '@/views/ComponentsBasics.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -74,6 +75,11 @@ const router = createRouter({
       path: '/TemplateRefs',
       name: 'TemplateRefs',
       component: TemplateRefs
+    },
+    {
+      path: '/ComponentsBasics',
+      name: 'ComponentsBasics',
+      component: ComponentsBasics
     }
   ]
 })

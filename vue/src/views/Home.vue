@@ -10,9 +10,11 @@
   <button @click="lifecycleHooks">Lifecycle Hooks</button>
   <button @click="watchers">Watchers</button>
   <button @click="templateRefs">Template Refs</button>
+  <button @click="componentsBasics">Components Basics</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'
+import ComponentsBasics from '@/views/Props.vue'
 
 let templateSyntax = function () {
   router.push({ name: 'TemplateSyntax' })
@@ -53,6 +55,9 @@ let watchers = function () {
 }
 let templateRefs = function () {
   router.push({ name: 'TemplateRefs' })
+}
+let componentsBasics = function () {
+  router.push({ name: 'ComponentsBasics' })
 }
 </script>
 <style scoped></style>
