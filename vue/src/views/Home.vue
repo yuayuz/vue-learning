@@ -16,7 +16,7 @@
   <button @click="handleRouter('ComponentEvents')">Component Events</button>
   <button @click="handleRouter('Component_vModel')">Component v-model</button>
   <button @click="handleRouter('FallthroughAttributes')">Fallthrough Attribute</button>
-
+  <button @click="handleRouter('Slots')">Slots</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'

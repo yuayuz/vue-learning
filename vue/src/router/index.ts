@@ -17,6 +17,7 @@ import Props from '@/views/ComponentsIn-Depth/Props.vue'
 import ComponentEvents from '@/views/ComponentsIn-Depth/ComponentEvents.vue'
 import ComponentVmodel from '@/views/ComponentsIn-Depth/ComponentVmodel.vue'
 import FallthroughAttributes from '@/views/ComponentsIn-Depth/FallthroughAttributes.vue'
+import Slots from '@/views/ComponentsIn-Depth/Slots.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -102,20 +103,19 @@ const router = createRouter({
       component:ComponentEvents
     },
     {
-<<<<<<< HEAD
       path: '/ComponentVmodel',
       name: 'Component v-model',
       component:ComponentVmodel
-=======
-      path: '/Component_vModel',
-      name: 'Component_vModel',
-      component:Component_vModel
     },
     {
       path:'/FallthroughAttributes',
       name: 'FallthroughAttributes',
       component:FallthroughAttributes
->>>>>>> fe2e8cd (add `FallthroughAttributes`)
+    },
+    {
+      path:'/Slots',
+      name: 'Slots',
+      component:Slots
     }
   ]
 })
