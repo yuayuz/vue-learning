@@ -18,6 +18,7 @@ import ComponentEvents from '@/views/ComponentsIn-Depth/ComponentEvents.vue'
 import ComponentVmodel from '@/views/ComponentsIn-Depth/ComponentVmodel.vue'
 import FallthroughAttributes from '@/views/ComponentsIn-Depth/FallthroughAttributes.vue'
 import Slots from '@/views/ComponentsIn-Depth/Slots.vue'
+import ProvideAndInject from '@/views/ComponentsIn-Depth/ProvideAndInject.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -116,6 +117,11 @@ const router = createRouter({
       path:'/Slots',
       name: 'Slots',
       component:Slots
+    },
+    {
+      path: '/ProvideAndInject',
+      name: 'ProvideAndInject',
+      component:ProvideAndInject
     }
   ]
 })
