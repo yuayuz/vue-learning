@@ -14,6 +14,7 @@
   <button @click="handleRouter('ComponentRegistration')">Component registration</button>
   <button @click="handleRouter('Props')">Props</button>
   <button @click="handleRouter('ComponentEvents')">Component Events</button>
+  <button @click="handleRouter('Component_vModel')">ComponentvModel</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'

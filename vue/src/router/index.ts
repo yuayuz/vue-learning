@@ -15,6 +15,7 @@ import ComponentsBasics from '@/views/vueBasics/ComponentsBasics.vue'
 import ComponentRegistration from '@/views/ComponentsIn-Depth/ComponentRegistration.vue'
 import Props from '@/views/ComponentsIn-Depth/Props.vue'
 import ComponentEvents from '@/views/ComponentsIn-Depth/ComponentEvents.vue'
+import ComponentVmodel from '@/views/ComponentsIn-Depth/ComponentVmodel.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -98,6 +99,11 @@ const router = createRouter({
       path: '/ComponentEvents',
       name: 'ComponentEvents',
       component:ComponentEvents
+    },
+    {
+      path: '/ComponentVmodel',
+      name: 'Component v-model',
+      component:ComponentVmodel
     }
   ]
 })
