@@ -43,14 +43,9 @@ const text = ref('abcd')
   <p>name is:{{ name }}</p>
   <p>age is:{{ age }}</p>
   <input placeholder="请输入文本" v-model="text" />
-  <p>{{text}}</p>
-  <ComponentModelChild
-    v-model:name="name"
-    v-model:age="age"
-    v-model.capitalize="text">
+  <p>{{ text }}</p>
+  <ComponentModelChild v-model:name="name" v-model:age="age" v-model.capitalize="text">
   </ComponentModelChild>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

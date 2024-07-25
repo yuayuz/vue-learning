@@ -5,12 +5,10 @@
 // console.log(props.foo)
 
 // 除了使用字符串声明 props 外,还可以使用对象的形式
-const props1 = defineProps(
-  {
-    name: String,
-    age: Number
-  }
-)
+const props1 = defineProps({
+  name: String,
+  age: Number
+})
 // 对于以对象形式声明的每个属性，key 是 prop 的名称，而值则是该 prop 预期类型的构造函数。
 
 /*如果一个 prop 的名字很长，应使用 camelCase 形式，
@@ -19,8 +17,8 @@ const props1 = defineProps(
 
 <template>
   <p>Component A</p>
-  <p>Name is:{{props1.name}}</p>
-  <p>Age is:{{props1.age}}</p>
+  <p>Name is:{{ props1.name }}</p>
+  <p>Age is:{{ props1.age }}</p>
 </template>
 
 <style scoped></style>

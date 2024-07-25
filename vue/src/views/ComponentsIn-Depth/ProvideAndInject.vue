@@ -3,7 +3,7 @@
 import { provide, readonly, ref } from 'vue'
 import ComponentProvideInject1 from '@/components/ComponentProvideInject1.vue'
 
-provide(/* 注入名 */ 'message',/* 值 */ 'hello')
+provide(/* 注入名 */ 'message', /* 值 */ 'hello')
 // provide() 函数接收两个参数。第一个参数被称为注入名，
 // 可以是一个字符串或是一个 Symbol。后代组件会用注入名来查找期望注入的值。
 // 一个组件可以多次调用 provide()，使用不同的注入名，注入不同的依赖值。
@@ -23,7 +23,7 @@ app.provide('message',  'hello!')
 // 在这种情况下，我们推荐在供给方组件内声明并提供一个更改数据的方法函数
 const num = ref(0)
 const text = ref()
-const addNum = function() {
+const addNum = function () {
   num.value += 1
 }
 provide('num', {

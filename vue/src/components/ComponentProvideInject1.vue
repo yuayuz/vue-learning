@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import ComponentProvideInject2 from '@/components/ComponentProvideInject2.vue'
 </script>
 

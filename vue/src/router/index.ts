@@ -101,27 +101,27 @@ const router = createRouter({
     {
       path: '/ComponentEvents',
       name: 'ComponentEvents',
-      component:ComponentEvents
+      component: ComponentEvents
     },
     {
       path: '/ComponentVmodel',
       name: 'Component v-model',
-      component:ComponentVmodel
+      component: ComponentVmodel
     },
     {
-      path:'/FallthroughAttributes',
+      path: '/FallthroughAttributes',
       name: 'FallthroughAttributes',
-      component:FallthroughAttributes
+      component: FallthroughAttributes
     },
     {
-      path:'/Slots',
+      path: '/Slots',
       name: 'Slots',
-      component:Slots
+      component: Slots
     },
     {
       path: '/ProvideAndInject',
       name: 'ProvideAndInject',
-      component:ProvideAndInject
+      component: ProvideAndInject
     }
   ]
 })

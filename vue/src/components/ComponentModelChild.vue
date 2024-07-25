@@ -6,14 +6,14 @@ const age = defineModel('age')
 const [text, modifiers] = defineModel({
   set(value: any) {
     if (modifiers.capitalize) {
-      return  value.charAt(0).toUpperCase() + value.slice(1)
+      return value.charAt(0).toUpperCase() + value.slice(1)
     }
-    return  value
+    return value
   },
   get(value: any) {
     if (modifiers.capitalize) {
-      value= value.charAt(0).toUpperCase() + value.slice(1)
-      return  value
+      value = value.charAt(0).toUpperCase() + value.slice(1)
+      return value
     }
     return value
   }
@@ -37,5 +37,4 @@ const [text, modifiers] = defineModel({
   border: red dashed 4px;
   padding: 20px;
 }
-
 </style>

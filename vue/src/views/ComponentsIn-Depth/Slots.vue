@@ -6,26 +6,28 @@ const first = ref('first')
 </script>
 
 <template>
-  <p class="f" >父组件</p>
+  <p class="f">父组件</p>
   <ComponentSlots>
-
     <!--  显式标明默认插槽  -->
     <!--  使用了具名插槽与默认插槽时，则需要为默认插槽使用显式的 <template> 标签。  -->
     <!--  当一个组件同时接收子组件通过默认插槽和具名插槽传递的信息时，
         所有位于顶级的非 <template> 节点都被隐式地视为默认插槽的内容  -->
     <template #default="{ message }">
-      我来自父组件   <!-- 插槽内容 -->
-      <body>body</body>   <!--此时的body被认为是默认插槽-->
+      我来自父组件
+      <!-- 插槽内容 -->
+      <body>
+        body
+      </body>
+      <!--此时的body被认为是默认插槽-->
       <!--   作用域插槽（子组件通过默认插槽传递信息）   -->
       <p>子组件通过默认插槽传来的消息：{{ message }}</p>
     </template>
-
 
     <!--  动态插槽名：动态指令参数在 v-slot 上也是有效的  -->
     <template v-slot:[first]="firstMessage">
       <p>动态插槽名</p>
       <p>first</p>
-      <p>{{firstMessage}}</p>
+      <p>{{ firstMessage }}</p>
     </template>
 
     <!-- 要为具名插槽传入内容，我们需要使用一个含 v-slot 指令的 <template> 元素，
@@ -42,7 +44,7 @@ const first = ref('first')
 </template>
 
 <style scoped>
-  .f{
-    border: red dashed 4px;
-  }
+.f {
+  border: red dashed 4px;
+}
 </style>

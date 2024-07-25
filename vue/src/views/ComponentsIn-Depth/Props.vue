@@ -28,12 +28,9 @@ prop 被作为初始值，子组件将其作为一个局部数据属性，这应
 
 // Boolean 类型转换
 // 为了更贴近原生 boolean attributes 的行为，声明为 Boolean 类型的 props 有特别的类型转换规则。
-
 </script>
 
-
 <template>
-
   <ComponentA v-bind="post" />
 </template>
 

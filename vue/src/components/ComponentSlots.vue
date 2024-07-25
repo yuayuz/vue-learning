@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-  const message = ref("")
+const message = ref('')
 </script>
 
 <template>
@@ -13,13 +13,16 @@ import { ref } from 'vue'
       <div>
         <p>默认插槽</p>
         <slot :message="message">
-          你好 <!-- 默认内容 -->
-        </slot>   <!-- 插槽出口 -->
+          你好
+          <!-- 默认内容 -->
+        </slot>
+        <!-- 插槽出口 -->
       </div>
       <div class="slot">
         <p>显式标注默认插槽</p>
         <slot name="default" message="来自子组件显式默认插槽的消息" />
-        <slot name="body" /> <!-- 因为同时使用默认和具名插槽，导致此不生效 -->
+        <slot name="body" />
+        <!-- 因为同时使用默认和具名插槽，导致此不生效 -->
       </div>
     </div>
     <div class="slot">

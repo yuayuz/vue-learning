@@ -3,11 +3,9 @@
 // 如果不想要一个组件继承 Attribute，可以在组件中设置 inheritAttrs: false
 import { useAttrs } from 'vue'
 
-defineOptions(
-  {
-    inheritAttrs: false
-  }
-)
+defineOptions({
+  inheritAttrs: false
+})
 // 通过设置 inheritAttrs 选项为 false，你可以完全控制透传进来的 attribute 被如何使用。
 
 // 这些透传进来的 attribute 可以在模板的表达式中直接用 $attrs 访问到。
@@ -20,7 +18,7 @@ const attrs = useAttrs()
 // 你不能通过侦听器去监听它的变化。如果你需要响应性，可以使用 prop。
 </script>
 <template>
-  <div :class='$attrs.class'>
+  <div :class="$attrs.class">
     <p>Component Fallthrough</p>
     <p>text is:{{ $attrs.text }}</p>
     <p>attrs is:{{ attrs }}</p>

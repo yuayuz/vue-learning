@@ -36,7 +36,6 @@ const emit = defineEmits<{
 function submitForm(email, password) {
   emit('submit', { email, password })
 } */
-
 </script>
 
 <template>
@@ -61,10 +60,6 @@ function submitForm(email, password) {
   <!--  在 <template> 中使用的 $emit 方法不能在组件的 <script setup> 部分中使用,
   可以显式地通过 defineEmits() 宏来声明它要触发的事件,defineEmits()不能在子函数中使用，
   emits 选项和 defineEmits() 宏还支持对象语法，通过 TypeScript 为参数指定类型，它允许我们对触发事件的参数进行验证-->
-
-
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
