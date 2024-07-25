@@ -20,6 +20,7 @@
   <button @click="handleRouter('ProvideAndInject')">Provide And Inject</button>
   <button @click="handleRouter('Composables')">Composables</button>
   <button @click="handleRouter('CustomDirectives')">Custom Directives</button>
+  <button @click="handleRouter('Plugins')">Plugins</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'

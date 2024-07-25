@@ -27,3 +27,16 @@ app.config.errorHandler = (err) => {
 
 /* createApp API允许在同一个页面中创建多个共存的Vue应用，
  * 每个应用都有自己用于配置和全局资源的作用域*/
+
+// 插件 (Plugins) 是一种能为 Vue 添加全局功能的工具代码。
+// $translate 函数会接收一个例如 greetings.hello 的字符串，
+// 在用户提供的翻译字典中查找，并返回翻译得到的值。
+
+import i18nPlugin from '@/plugins/i18n'
+
+app.use(i18nPlugin, {
+  greetings: {
+    hello: 'Bonjour!'
+  }
+})
+

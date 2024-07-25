@@ -21,6 +21,7 @@ import Slots from '@/views/ComponentsInDepth/Slots.vue'
 import ProvideAndInject from '@/views/ComponentsInDepth/ProvideAndInject.vue'
 import Composables from '@/views/Reusability/Composables.vue'
 import CustomDirectives from '@/views/Reusability/CustomDirectives.vue'
+import Plugins from '@/views/Reusability/Plugins.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -134,6 +135,11 @@ const router = createRouter({
       path:'/CustomDirectives',
       name: 'CustomDirectives',
       component:CustomDirectives
+    },
+    {
+      path:'/Plugins',
+      name: 'Plugins',
+      component:Plugins
     }
   ]
 })
