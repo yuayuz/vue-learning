@@ -1,5 +1,5 @@
 <template>
-  <!--计算属性--模板中表达式方便，但是只能用来做一些简单的操作-->
+  <!-- 计算属性--模板中表达式方便，但是只能用来做一些简单的操作 -->
   <span>{{ author.books.length > 0 ? 'Yes' : 'No' }}</span>
   <div>
     <p>{{ publishedBooksMessage }}</p>

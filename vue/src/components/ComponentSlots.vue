@@ -27,12 +27,14 @@ const message = ref('')
     </div>
     <div class="slot">
       <p>具名插槽</p>
-      <!--这类带 name 的插槽被称为具名插槽 (named slots)。
-     没有提供 name 的 <slot> 出口会隐式地命名为“default”-->
+      <!--
+      这类带 name 的插槽被称为具名插槽 (named slots)。
+      没有提供 name 的 <slot> 出口会隐式地命名为“default”
+      -->
       <div class="slot">
         <slot name="first" message1="来自动态具名插槽的消息" />
       </div>
-      <!--  条件插槽：可以根据插槽内容是否存在来渲染某些内容  -->
+      <!-- 条件插槽：可以根据插槽内容是否存在来渲染某些内容 -->
       <div v-if="$slots.second" class="slot">
         <p>条件插槽</p>
         <slot name="second" message2="来自条件具名插槽的消息" />

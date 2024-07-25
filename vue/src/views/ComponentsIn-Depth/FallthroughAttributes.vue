@@ -1,7 +1,8 @@
 <script setup lang="ts">
 // 没有参数的 v-bind 会将一个对象的所有属性都作为 attribute 应用到目标元素上。
 
-// 多个根节点的组件没有自动 attribute 透传行为，如果 $attrs 没有被显式绑定，将会抛出一个运行时警告。
+// 多个根节点的组件没有自动 attribute 透传行为，如果 $attrs 没有被显式绑定，
+// 将会抛出一个运行时警告。
 import ComponentFallthrough from '@/components/ComponentFallthrough.vue'
 </script>
 
@@ -18,10 +19,12 @@ import ComponentFallthrough from '@/components/ComponentFallthrough.vue'
   <!-- 如果一个子组件的根元素已经有了 class 或 style attribute，它会和从父组件上继承的值合并。 -->
 
   <!-- v-on 监听器的合并 -->
-  <!-- click 监听器会被添加到 <MyButton> 的根元素，即那个原生的 <button> 元素之上。
+  <!--
+  click 监听器会被添加到 <MyButton> 的根元素，即那个原生的 <button> 元素之上。
   当原生的 <button> 被点击，会触发父组件的 onClick 方法。
   同样的，如果原生 button 元素自身也通过 v-on 绑定了一个事件监听器，
-  则这个监听器和从父组件继承的监听器都会被触发。 -->
+  则这个监听器和从父组件继承的监听器都会被触发。
+  -->
 
   <!-- 深层组件继承 -->
 

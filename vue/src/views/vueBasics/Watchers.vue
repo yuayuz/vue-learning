@@ -1,7 +1,9 @@
 <template>
-  <!--  计算属性可以声明性计算衍生值，当在状态变化时执行一些‘副作用’
-  例如：修改 DOM 或者根据异步操作去修改另一处的变化-->
-  <!--  在组合式 API 中，可以使用 watch 函数在每次响应式状态发生变化时触发回调函数-->
+  <!--
+  计算属性可以声明性计算衍生值，当在状态变化时执行一些‘副作用’
+  例如：修改 DOM 或者根据异步操作去修改另一处的变化
+  -->
+  <!-- 在组合式 API 中，可以使用 watch 函数在每次响应式状态发生变化时触发回调函数-->
   <p>A:{{ A }}</p>
   <p>B:{{ B }}</p>
   <button @click="setA">A 说：你好</button>
@@ -35,9 +37,11 @@ watch(A, () => {
 const obj = reactive({ count: 0 })
 const message = ref('')
 // 错误，因为 watch() 得到的参数是一个 number
-/*watch(obj.count, (count) => {
+/*
+watch(obj.count, (count) => {
   console.log(`Count is: ${count}`)
-})*/
+})
+*/
 // 需要用返回这个属性的 getter 函数
 // 提供一个 getter 函数
 watch(

@@ -11,8 +11,9 @@ const props1 = defineProps({
 })
 // 对于以对象形式声明的每个属性，key 是 prop 的名称，而值则是该 prop 预期类型的构造函数。
 
-/*如果一个 prop 的名字很长，应使用 camelCase 形式，
-因为它们是合法的 JavaScript 标识符，可以直接在模板的表达式中使用，也可以避免在作为属性 key 名时必须加上引号*/
+// 如果一个 prop 的名字很长，应使用 camelCase 形式，
+// 因为它们是合法的 JavaScript 标识符，可以直接在模板的表达式中使用，
+// 也可以避免在作为属性 key 名时必须加上引号
 </script>
 
 <template>
