@@ -19,6 +19,7 @@ import ComponentVmodel from '@/views/ComponentsInDepth/ComponentVmodel.vue'
 import FallthroughAttributes from '@/views/ComponentsInDepth/FallthroughAttributes.vue'
 import Slots from '@/views/ComponentsInDepth/Slots.vue'
 import ProvideAndInject from '@/views/ComponentsInDepth/ProvideAndInject.vue'
+import Composables from '@/views/Reusability/Composables.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -122,6 +123,11 @@ const router = createRouter({
       path: '/ProvideAndInject',
       name: 'ProvideAndInject',
       component: ProvideAndInject
+    },
+    {
+      path: '/Composables',
+      name: 'Composables',
+      component: Composables
     }
   ]
 })

@@ -18,6 +18,7 @@
   <button @click="handleRouter('FallthroughAttributes')">Fallthrough Attribute</button>
   <button @click="handleRouter('Slots')">Slots</button>
   <button @click="handleRouter('ProvideAndInject')">Provide And Inject</button>
+  <button @click="handleRouter('Composables')">Composables</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'
