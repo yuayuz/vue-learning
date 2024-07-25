@@ -20,6 +20,7 @@ import FallthroughAttributes from '@/views/ComponentsInDepth/FallthroughAttribut
 import Slots from '@/views/ComponentsInDepth/Slots.vue'
 import ProvideAndInject from '@/views/ComponentsInDepth/ProvideAndInject.vue'
 import Composables from '@/views/Reusability/Composables.vue'
+import CustomDirectives from '@/views/Reusability/CustomDirectives.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -128,6 +129,11 @@ const router = createRouter({
       path: '/Composables',
       name: 'Composables',
       component: Composables
+    },
+    {
+      path:'/CustomDirectives',
+      name: 'CustomDirectives',
+      component:CustomDirectives
     }
   ]
 })
