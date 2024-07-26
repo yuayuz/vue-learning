@@ -23,6 +23,7 @@ import Composables from '@/views/Reusability/Composables.vue'
 import CustomDirectives from '@/views/Reusability/CustomDirectives.vue'
 import Plugins from '@/views/Reusability/Plugins.vue'
 import Transition from '@/views/BuiltInComponents/Transition.vue'
+import TransitionGroup from '@/views/BuiltInComponents/TransitionGroup.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -146,6 +147,11 @@ const router = createRouter({
       path:'/Transition',
       name: 'Transition',
       component:Transition
+    },
+    {
+      path: '/TransitionGroup',
+      name: 'TransitionGroup',
+      component:TransitionGroup,
     }
   ]
 })
