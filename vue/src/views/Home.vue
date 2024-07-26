@@ -21,6 +21,7 @@
   <button @click="handleRouter('Composables')">Composables</button>
   <button @click="handleRouter('CustomDirectives')">Custom Directives</button>
   <button @click="handleRouter('Plugins')">Plugins</button>
+  <button @click="handleRouter('Transition')">Transition</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'

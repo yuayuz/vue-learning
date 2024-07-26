@@ -22,6 +22,7 @@ import ProvideAndInject from '@/views/ComponentsInDepth/ProvideAndInject.vue'
 import Composables from '@/views/Reusability/Composables.vue'
 import CustomDirectives from '@/views/Reusability/CustomDirectives.vue'
 import Plugins from '@/views/Reusability/Plugins.vue'
+import Transition from '@/views/BuiltInComponents/Transition.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -132,14 +133,19 @@ const router = createRouter({
       component: Composables
     },
     {
-      path:'/CustomDirectives',
+      path: '/CustomDirectives',
       name: 'CustomDirectives',
-      component:CustomDirectives
+      component: CustomDirectives
     },
     {
-      path:'/Plugins',
+      path: '/Plugins',
       name: 'Plugins',
-      component:Plugins
+      component: Plugins
+    },
+    {
+      path:'/Transition',
+      name: 'Transition',
+      component:Transition
     }
   ]
 })
