@@ -24,6 +24,7 @@
   <button @click="handleRouter('Transition')">Transition</button>
   <button @click="handleRouter('TransitionGroup')">TransitionGroup</button>
   <button @click="handleRouter('KeepAlive')">KeepAlive</button>
+  <button @click="handleRouter('Teleport')">Teleport</button>/
 </template>
 <script setup lang="ts">
 import router from '@/router'

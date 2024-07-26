@@ -25,6 +25,7 @@ import Plugins from '@/views/Reusability/Plugins.vue'
 import Transition from '@/views/BuiltInComponents/Transition.vue'
 import TransitionGroup from '@/views/BuiltInComponents/TransitionGroup.vue'
 import KeepAlive from '@/views/BuiltInComponents/KeepAlive.vue'
+import Teleport from '@/views/BuiltInComponents/Teleport.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -158,6 +159,11 @@ const router = createRouter({
       path:'/KeepAlive',
       name: 'KeepAlive',
       component:KeepAlive
+    },
+    {
+      path:'/Teleport',
+      name: 'Teleport',
+      component:Teleport
     }
   ]
 })
