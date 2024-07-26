@@ -23,6 +23,7 @@
   <button @click="handleRouter('Plugins')">Plugins</button>
   <button @click="handleRouter('Transition')">Transition</button>
   <button @click="handleRouter('TransitionGroup')">TransitionGroup</button>
+  <button @click="handleRouter('KeepAlive')">KeepAlive</button>
 </template>
 <script setup lang="ts">
 import router from '@/router'
