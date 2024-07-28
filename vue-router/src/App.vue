@@ -4,6 +4,7 @@
   <header>
     <div class="wrapper">
       <nav>
+        <router-link to="/"></router-link>
       </nav>
     </div>
   </header>
