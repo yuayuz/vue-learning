@@ -36,6 +36,9 @@ const n = ref(0)
   <button @click="handleRouter('NestedRoutes')">NestedRoutes</button>
   <button @click="handleRouter('ProgrammaticNavigation')">ProgrammaticNavigation</button>
   <button @click="handleRouter('NamedViews')">NamedViews</button>
+  <button @click="() => router.push({ name: 'PassingPropsToRouteComponents', params: { id: 1 } })">
+    PassingPropsToRouteComponents
+  </button>
 </template>
 
 <style scoped></style>

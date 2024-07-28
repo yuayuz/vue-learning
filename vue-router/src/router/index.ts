@@ -12,6 +12,7 @@ import NamedViews from '@/views/Essentials/NamedViews.vue'
 import NamedViewsId from '@/views/Essentials/NamedViewsId.vue'
 import NamedViewsAge from '@/views/Essentials/NamedViewsAge.vue'
 import NamedViewsPeople from '@/views/Essentials/NamedViewsPeople.vue'
+import PassingPropsToRouteComponents from '@/views/Essentials/PassingPropsToRouteComponents.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -82,6 +83,12 @@ const router = createRouter({
           }
         }
       ]
+    },
+    {
+      path: '/PassingPropsToRouteComponents/:id',
+      name: 'PassingPropsToRouteComponents',
+      component: PassingPropsToRouteComponents,
+      props: true
     }
   ]
 })
