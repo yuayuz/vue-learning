@@ -35,6 +35,7 @@ const n = ref(0)
   </button>
   <button @click="handleRouter('NestedRoutes')">NestedRoutes</button>
   <button @click="handleRouter('ProgrammaticNavigation')">ProgrammaticNavigation</button>
+  <button @click="handleRouter('NamedViews')">NamedViews</button>
 </template>
 
 <style scoped></style>

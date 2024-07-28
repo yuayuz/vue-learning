@@ -8,6 +8,10 @@ import NestedRoutes from '@/views/Essentials/NestedRoutes.vue'
 import NestedRoutes1 from '@/views/Essentials/NestedRoutes1.vue'
 import NestedRoutes2 from '@/views/Essentials/NestedRoutes2.vue'
 import ProgrammaticNavigation from '@/views/Essentials/ProgrammaticNavigation.vue'
+import NamedViews from '@/views/Essentials/NamedViews.vue'
+import NamedViewsId from '@/views/Essentials/NamedViewsId.vue'
+import NamedViewsAge from '@/views/Essentials/NamedViewsAge.vue'
+import NamedViewsPeople from '@/views/Essentials/NamedViewsPeople.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -58,6 +62,26 @@ const router = createRouter({
       path: '/ProgrammaticNavigation',
       name: 'ProgrammaticNavigation',
       component: ProgrammaticNavigation
+    },
+    {
+      path: '/NamedViews',
+      name: 'NamedViews',
+      component: NamedViews,
+      children: [
+        {
+          path: 'id',
+          component: NamedViewsId
+        },
+        {
+          path: 'people',
+          name: 'people',
+          components: {
+            default: NamedViewsPeople,
+            name: NamedViewsId,
+            age: NamedViewsAge
+          }
+        }
+      ]
     }
   ]
 })
