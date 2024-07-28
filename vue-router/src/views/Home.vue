@@ -10,6 +10,8 @@ const id = ref()
 const handleRouter1 = function (name: string, id: string, page: string) {
   router.push({ name: page, params: { name: name, id: id } })
 }
+const r = ref('r')
+const n = ref(0)
 </script>
 
 <template>
@@ -20,6 +22,15 @@ const handleRouter1 = function (name: string, id: string, page: string) {
   <input placeholder="请输入要跳转的id" v-model="id" />
   <button @click="handleRouter1(name, id, 'DynamicRouteMatchingWithParams')">
     DynamicRouteMatchingWithParams
+  </button>
+  <br />
+  <input v-model="n" />
+  <button @click="router.push({ name: 'RoutesMatchingSyntax', params: { rs: n } })">
+    RoutesMatchingSyntax
+  </button>
+  <input v-model="r" />
+  <button @click="router.push({ name: 'RoutesMatchingSyntax', params: { rs: r } })">
+    RoutesMatchingSyntax
   </button>
 </template>
 
