@@ -9,6 +9,11 @@ const router = createRouter({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/GettingStarted',
+      name: 'GettingStarted',
+      component: GettingStarted
     }
   ]
 })
