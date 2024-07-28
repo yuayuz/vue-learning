@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import router from '@/router'
 import { h, ref } from 'vue'
+import ProgrammaticNavigation from '@/views/Essentials/ProgrammaticNavigation.vue'
 
 const handleRouter = function (page: string) {
   router.push({ name: page })
@@ -33,6 +34,7 @@ const n = ref(0)
     RoutesMatchingSyntax
   </button>
   <button @click="handleRouter('NestedRoutes')">NestedRoutes</button>
+  <button @click="handleRouter('ProgrammaticNavigation')">ProgrammaticNavigation</button>
 </template>
 
 <style scoped></style>

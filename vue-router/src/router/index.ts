@@ -7,6 +7,7 @@ import RoutesMatchingSyntax1 from '@/views/Essentials/RoutesMatchingSyntax1.vue'
 import NestedRoutes from '@/views/Essentials/NestedRoutes.vue'
 import NestedRoutes1 from '@/views/Essentials/NestedRoutes1.vue'
 import NestedRoutes2 from '@/views/Essentials/NestedRoutes2.vue'
+import ProgrammaticNavigation from '@/views/Essentials/ProgrammaticNavigation.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -52,6 +53,11 @@ const router = createRouter({
           component: NestedRoutes2
         }
       ]
+    },
+    {
+      path: '/ProgrammaticNavigation',
+      name: 'ProgrammaticNavigation',
+      component: ProgrammaticNavigation
     }
   ]
 })
