@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import router from '@/router'
-import { ref } from 'vue'
+import { h, ref } from 'vue'
 
 const handleRouter = function (page: string) {
   router.push({ name: page })
@@ -32,6 +32,7 @@ const n = ref(0)
   <button @click="router.push({ name: 'RoutesMatchingSyntax', params: { rs: r } })">
     RoutesMatchingSyntax
   </button>
+  <button @click="handleRouter('NestedRoutes')">NestedRoutes</button>
 </template>
 
 <style scoped></style>
