@@ -15,6 +15,7 @@ import NamedViewsPeople from '@/views/Essentials/NamedViewsPeople.vue'
 import PassingPropsToRouteComponents from '@/views/Essentials/PassingPropsToRouteComponents.vue'
 import NavigationGuards from '@/views/Advanced/NavigationGuards.vue'
 import RouteMetaFields from '@/views/Advanced/RouteMetaFields.vue'
+import VueRouterAndCompositionAPI from '@/views/Advanced/VueRouterAndCompositionAPI.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -103,6 +104,14 @@ const router = createRouter({
       component: RouteMetaFields,
       meta: {
         hi: 'Hello'
+      }
+    },
+    {
+      path: '/VueRouterAndCompositionAPI',
+      name: 'VueRouterAndCompositionAPI',
+      component: VueRouterAndCompositionAPI,
+      meta: {
+        hi: 'hello'
       }
     }
   ]

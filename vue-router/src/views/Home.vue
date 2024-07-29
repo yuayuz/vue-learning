@@ -40,6 +40,7 @@ const n = ref(0)
   </button>
   <button @click="handleRouter('NavigationGuards')">NavigationGuards</button>
   <button @click="handleRouter('RouterMetaFields')">RouteMetaFields</button>
+  <button @click="handleRouter('VueRouterAndCompositionAPI')">VueRouterAndCompositionAPI</button>
 </template>
 
 <style scoped></style>
