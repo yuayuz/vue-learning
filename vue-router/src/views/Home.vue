@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import router from '@/router'
-import { h, ref } from 'vue'
-import ProgrammaticNavigation from '@/views/Essentials/ProgrammaticNavigation.vue'
+import { h, provide, ref } from 'vue'
 
 const handleRouter = function (page: string) {
   router.push({ name: page })
@@ -39,6 +38,7 @@ const n = ref(0)
   <button @click="() => router.push({ name: 'PassingPropsToRouteComponents', params: { id: 1 } })">
     PassingPropsToRouteComponents
   </button>
+  <button @click="handleRouter('NavigationGuards')">NavigationGuards</button>
 </template>
 
 <style scoped></style>
